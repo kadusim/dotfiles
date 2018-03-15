@@ -5,12 +5,12 @@ This is my current dotfiles setup. It's composed by a bunch of plugins, some map
 ## How to use?
 Clone this repository into your home directory as ~/.vim and then install the plugins. Such as:
 
-'''
+```
 git clone https://github.com/kadusim/dotfiles.git ~/.vim
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ln -s ~/.vim/vimrc ~/.vimrc
 vim +PluginInstall +qall
-'''
+```
 
 ## License
 The MIT License (MIT)
