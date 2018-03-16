@@ -8,7 +8,7 @@ call vundle#begin()
   Plugin 'VundleVim/Vundle.vim'
 
 	" Addons
-  Plugin 'tpope/vim-fugitive'  
+  Plugin 'tpope/vim-fugitive'
   Plugin 'scrooloose/nerdtree'
   Plugin 'tpope/vim-bundler'
 	Plugin 'kien/ctrlp.vim'
@@ -53,25 +53,28 @@ nnoremap <Down> :echoe "Use j"<CR>
 nmap bf <Esc>:bf<cr>               " back to controller and 'gf' open model when cursor up on Variable User, for example
 
 "-------------------------------------------------------------------------------
-" General 
-"------------------------------------------------------------------------------- 
+" General
+"-------------------------------------------------------------------------------
 
-set hlsearch incsearch smartcase " This switches on syntax highlighting 
+set hlsearch incsearch smartcase " This switches on syntax highlighting
 set noerrorbells novisualbell    " Turn off visual and audible bells
 set guifont=Monaco:h16           " Font
 set number                       " Shows line numbers
 set relativenumber               " Show the line number relative to the line with the cursor
 set cursorline                   " Highlight cursor line
-set tabstop=2                    " Tab size  
+set expandtab                    " Tab size
+set tabstop=2                    " Tab size
+set shiftwidth=2                 " Tab size
+set softtabstop=2                " Tab size
 set autoindent                   " Ident auto code
 set backspace=indent,eol,start   " More powerful backspacing
 set ruler                        " Always shows the ruler (cursor position and etc)
 set history=200                  " Keep 200 lines of command line history
-set nocompatible                 " Use vim not vi config 
+set nocompatible                 " Use vim not vi config
 
-"------------------------------------------------------------------------------- 
+"-------------------------------------------------------------------------------
 " Configuracoes nerdtree
-"------------------------------------------------------------------------------- 
+"-------------------------------------------------------------------------------
 
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
