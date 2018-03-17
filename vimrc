@@ -1,4 +1,9 @@
 "-------------------------------------------------------------------------------
+" Leader
+"-------------------------------------------------------------------------------
+let mapleader=","
+
+"-------------------------------------------------------------------------------
 " Plugins
 "-------------------------------------------------------------------------------
 
@@ -27,10 +32,11 @@ call vundle#begin()
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'tpope/vim-rake'
   Plugin 'tpope/vim-rails'
-  
-	" Themes
-	Plugin 'altercation/vim-colors-solarized'
-	let g:airline_solarized_bg='dark'
+  Plugin 'jiangmiao/auto-pairs'
+
+  " Themes
+  Plugin 'altercation/vim-colors-solarized'
+  let g:airline_solarized_bg='dark'
 
 call vundle#end()
 filetype plugin indent on
@@ -71,9 +77,10 @@ set backspace=indent,eol,start   " More powerful backspacing
 set ruler                        " Always shows the ruler (cursor position and etc)
 set history=200                  " Keep 200 lines of command line history
 set nocompatible                 " Use vim not vi config
+set scrolloff=4                  " Tell vim to let 4 lines before scrolling
 
 "-------------------------------------------------------------------------------
-" Config nerdtree
+" Configuracoes nerdtree
 "-------------------------------------------------------------------------------
 
 autocmd vimenter * NERDTree
