@@ -7,21 +7,21 @@ call vundle#begin()
 
   Plugin 'VundleVim/Vundle.vim'
 
-	" Addons
+  " Addons
   Plugin 'tpope/vim-fugitive'
   Plugin 'scrooloose/nerdtree'
   Plugin 'tpope/vim-bundler'
-	Plugin 'kien/ctrlp.vim'
-	Plugin 'tomtom/tcomment_vim'
-	Plugin 'vim-airline/vim-airline'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'tomtom/tcomment_vim'
+  Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'christoomey/vim-tmux-navigator'
 
-	" Syntax highlighting
+  " Syntax highlighting
   Plugin 'elzr/vim-json'
   Plugin 'kchmck/vim-coffee-script'
-	Plugin 'pangloss/vim-javascript'
-	Plugin 'godlygeek/tabular'
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'godlygeek/tabular'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'thoughtbot/vim-rspec'
   Plugin 'vim-ruby/vim-ruby'
@@ -73,7 +73,7 @@ set history=200                  " Keep 200 lines of command line history
 set nocompatible                 " Use vim not vi config
 
 "-------------------------------------------------------------------------------
-" Configuracoes nerdtree
+" Config nerdtree
 "-------------------------------------------------------------------------------
 
 autocmd vimenter * NERDTree
