@@ -2,7 +2,7 @@
 
 This is my current dotfiles setup. It's composed by a bunch of plugins, some mappings, colors, fonts and specific VIM and ZSH settings.
 
-![image] (print.png)
+![image](print.png)
 
 ## How to use?
 Clone this repository into your home directory as ~/.vim and then install the plugins. Such as:
