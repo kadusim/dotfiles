@@ -27,7 +27,7 @@ call vundle#begin()
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'tpope/vim-rake'
   Plugin 'tpope/vim-rails'
-
+  
 	" Themes
 	Plugin 'altercation/vim-colors-solarized'
 	let g:airline_solarized_bg='dark'

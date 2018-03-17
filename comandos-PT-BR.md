@@ -1,4 +1,5 @@
-Gerais
+## Gerais
+
   |G| última linha
   |gg| primeira linha
   |/ palavra enter| pesquisa palavra pra frente, |n| para mesma direção, |N| para anterior
@@ -55,33 +56,41 @@ Gerais
   |R| entra no modo de raplace até que seja teclado esc
   |r| replace apenas carácter que o cursor estiver
 
-comandos externos
+### comandos externos
+
   |:!comando| executa comando externo
   |:w arquivo| salva o atual arquivo do Vim para o disco com o nome ARQUIVO
   |v movimento| ou |V movimento| e |:w arquivo| salva as linhas no novo arquivo
   |:r arquivo| recupera ARQUIVO do disco e o insere dentro do arquivo atual
 
-changes
+### changes
+
   |:s/velho/novo| o primeiro 'velho' de uma linha por 'novo' digite
   |:s/velho/novo/g| todos os 'velho' em uma linha por 'novo' digite
   |:#,#s/velho/novo| expressões entre dois números (#) de linhas digite
   |:%s/velho/novo/g| todas as ocorrências no arquivo digite
   |:%s/velho/novo/gc| Para confirmar cada substituição adicione 'c'
   |CTRL-W CTRL-W|  para pular de uma janela a outra.
-tcomment
+
+### tcomment
+
   |V| selecionar as linhas e digitar |gc|, comenta as linhas selecionadas
 
-ctrlp
+### ctrlp
+
   |Ctrl P| abre a opção de procurar um arquivo no diretório
 
-nerdTree
+### nerdTree
+
   |m| abre o menu
 
-help
+### help
+
   |:help| ou |:help Ctrl D tab| para abrir a janela de ajuda e navegar nos comandos possíveis
 
-Links
-  https://www.vim.org/docs.php
-  https://vim-adventures.com/
-  http://vimcasts.org/
-  https://thoughtbot.com/upcase/vim
+### Links
+
+  [vim.org] (https://www.vim.org/docs.php)
+  [vim-adventures] (https://vim-adventures.com/)
+  [vimcasts] (http://vimcasts.org/)
+  [upcase/vim] (https://thoughtbot.com/upcase/vim)
