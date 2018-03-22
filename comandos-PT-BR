@@ -1,88 +1,95 @@
-Gerais
-
-  |G| última linha
-  |gg| primeira linha
-  |/ palavra enter| pesquisa palavra pra frente, |n| para mesma direção, |N| para anterior
-  |? palavra enter| pesquisa palavra pra trás, |n| para mesma direção, |N| para anterior
-  |c| change
-  |d| delete
-  |d$| deleta do cursor até o final da linha
-  |dd| deleta linha inteira e guarda e buffer, podendo usar o |p| para colar
-  |y| yank into register (does not change the text)
-  |~| swap case (only if 'tildeop' is set)
-  |g~| swap case
-  |gu| lowercase
-  |gU| uppercase
   |!| filter through an external program
-  |=| identar código
-  |gq| text formatting
-  |g?| ROT13 encoding (bagunça tudo as letras rs)
-  |>| shift right
-  |<| shift left
-  |zf| define a fold
-  |u| undo
-  |U| undo todos
-  |Ctrl R| desfaz o undo
-  |W| Avança palavra apenas considerando espaços
-  |x| deleta carácter
-  |w| Avança palavra considerando pontos
-  |B| Retorna palavra apenas considerando espaços
-  |b| Retorna palavra considerando pontos
-  |e| vai para o final da palavra
   |$| vai para final de linha
-  |0| vai para o inicio da linha
-  |H| início da tela
-  |M| meio da tela
-  |L| final da tela
-  |A| insert final da lina
-  |a| insert depois do cursor
-  |I| insert início da linha
-  |i| insert antes do cursor
-  |Ctrl u| pagina pra cima
-  |Ctrl d| pagina pra baixo
-  |)| pula parágrafo
+  |%| em cima da ‘{‘ ou da <div> ou da <a> ele vai pra onde esta fechando
   |(| volta parágrafo
-  |}| pula parágrafo
-  |{| volta parágrafo
-  |zz| coloca a linha no meio da página
-  |ci)| limpa o que está dentro de parênteses e entra em modo insert
-  |di)| deleta o que está dentro de parênteses e entra em modo insert
-  |c3w| limpa as 3 palavras seguintes e entra em modo de insert, ou
-  |cw| limpa a palavra
-  |c3e| limpa as 3 palavras seguintes e entra em modo de insert
-  |ce| limpa a palavra
-  |o| incluir uma linha abaixo do cursor
+  |)| pula parágrafo
+  |/ palavra enter| pesquisa palavra pra frente, |n| para mesma direção, |N| para anterior
+  |0| vai para o inicio da linha
+  |<| shift left
+  |=| identar código
+  |>| shift right
+  |? palavra enter| pesquisa palavra pra trás, |n| para mesma direção, |N| para anterior
+  |A| insert final da lina
+  |B| Retorna palavra apenas considerando espaços
+  |Ctrl r| desfaz o undo
+  |Ctrl d| pagina pra baixo
+  |Ctrl u| pagina pra cima
+  |Ctrl v| seleção em bloco |C| informa o que sera substituído |esc| substitui tdas
+  |G| última linha
+  |H| início da tela
+  |I| insert início da linha
+  |J| junta linhas |V| seleciona as linhas e |J| junta
+  |L| final da tela
+  |M| meio da tela
   |O| incluir uma linha acima do cursor
   |R| entra no modo de raplace até que seja teclado esc
+  |U| undo todos
+  |W| Avança palavra apenas considerando espaços
+  |X| deleta caracter para trás
+  |a| insert depois do cursor
+  |b| Retorna palavra considerando pontos
+  |c3e| limpa as 3 palavras seguintes e entra em modo de insert
+  |c3w| limpa as 3 palavras seguintes e entra em modo de insert, ou
+  |ce| limpa a palavra
+  |ci)| limpa o que está dentro de parênteses e entra em modo insert
+  |cw| limpa a palavra
+  |c| change
+  |d$| deleta do cursor até o final da linha
+  |dd| deleta linha inteira e guarda e buffer, podendo usar o |p| para colar
+  |di)| deleta o que está dentro de parênteses e entra em modo insert
+  |d| delete |dw| deleta palavra
+  |e| vai para o final da palavra
+  |g?| ROT13 encoding (bagunça tudo as letras rs)
+  |gU| uppercase
+  |gg| primeira linha
+  |gq| text formatting
+  |gu| lowercase
+  |g~| swap case
+  |i| insert antes do cursor
+  |ma| marca a linha |y’a| copia tudo entre o |ma| e a posição atual |p| cola linhas
+  |o| incluir uma linha abaixo do cursor
   |r| replace apenas carácter que o cursor estiver
-
+  |u| undo
+  |w| Avança palavra considerando pontos
+  |x| deleta carácter para frente ||
+  |y| yank into register (does not change the text)
+  |zf| define a fold
+  |zz| coloca a linha no meio da página
+  |{| volta parágrafo
+  |}| pula parágrafo
+  |~| swap case (only if 'tildeop' is set)
 comandos externos
-
   |:!comando| executa comando externo
+  |:r arquivo| recupera ARQUIVO do disco e o insere dentro do arquivo atual
   |:w arquivo| salva o atual arquivo do Vim para o disco com o nome ARQUIVO
   |v movimento| ou |V movimento| e |:w arquivo| salva as linhas no novo arquivo
-  |:r arquivo| recupera ARQUIVO do disco e o insere dentro do arquivo atual
-
 changes
-
-  |:s/velho/novo| o primeiro 'velho' de uma linha por 'novo' digite
-  |:s/velho/novo/g| todos os 'velho' em uma linha por 'novo' digite
   |:#,#s/velho/novo| expressões entre dois números (#) de linhas digite
-  |:%s/velho/novo/g| todas as ocorrências no arquivo digite
   |:%s/velho/novo/gc| Para confirmar cada substituição adicione 'c'
+  |:%s/velho/novo/g| todas as ocorrências no arquivo digite
+  |:s/velho/novo/g| todos os 'velho' em uma linha por 'novo' digite
+  |:s/velho/novo| o primeiro 'velho' de uma linha por 'novo' digite
   |CTRL-W CTRL-W|  para pular de uma janela a outra.
-
 tcomment
-
   |V| selecionar as linhas e digitar |gc|, comenta as linhas selecionadas
-
+macro
+	|qa| inicia a gravação (a é o nome da variável que irá ficar a macro)
+    executar os comandos
+  |esc| volta normal
+  |q| finaliza gravação
+  |@a| executar a macro
+autocomplete
+	digita inicio do comando
+	|Ctrl x| inicia modo complete
+	|Ctrl o| abre lista de possibilidades de acordo com o arquivo .rb .css .js
+  |Ctrl n| abre lista de possibilidades de acordo com o que ja escreveu anterior (palavras)
+  |Ctrl l| abre lista de possibilidades de acordo com o que ja escreveu anterior (linha inteira)
 ctrlp
-
-  |Ctrl P| abre a opção de procurar um arquivo no diretório
-
+	|Ctrl P| abre a opção de procurar um arquivo no diretório
 nerdTree
-
-  |m| abre o menu
+	|m| abre o menu
+	|gt| proxima tab
+	|gT| tab anterior
 
 help
 
@@ -90,7 +97,7 @@ help
 
 Links
 
-  [vim.org] (https://www.vim.org/docs.php)
-  [vim-adventures] (https://vim-adventures.com/)
-  [vimcasts] (http://vimcasts.org/)
   [upcase/vim] (https://thoughtbot.com/upcase/vim)
+  [vim-adventures] (https://vim-adventures.com/)
+  [vim.org] (https://www.vim.org/docs.php)
+  [vimcasts] (http://vimcasts.org/)
