@@ -81,6 +81,7 @@ set shiftwidth=2                 " Tab size
 set softtabstop=2                " Tab size
 set tabstop=2                    " Tab size
 set updatetime=100               " For gitgutter update, dafault is 4000
+set lcs=eol:¶,tab:\ \            " :set list to active mask end of line and :set nolist to disable
 
 "-------------------------------------------------------------------------------
 " Configuracoes nerdtree

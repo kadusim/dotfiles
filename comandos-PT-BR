@@ -89,7 +89,7 @@ ctrlp
 nerdTree
   |m| abre o menu
   |gt| proxima tab
-	|gT| tab anterior
+  |gT| tab anterior
 
 help
 
