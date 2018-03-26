@@ -73,22 +73,22 @@ changes
 tcomment
   |V| selecionar as linhas e digitar |gc|, comenta as linhas selecionadas
 macro
-	|qa| inicia a gravação (a é o nome da variável que irá ficar a macro)
+  |qa| inicia a gravação (a é o nome da variável que irá ficar a macro)
     executar os comandos
   |esc| volta normal
   |q| finaliza gravação
   |@a| executar a macro
 autocomplete
-	digita inicio do comando
-	|Ctrl x| inicia modo complete
-	|Ctrl o| abre lista de possibilidades de acordo com o arquivo .rb .css .js
+  digita inicio do comando
+  |Ctrl x| inicia modo complete
+  |Ctrl o| abre lista de possibilidades de acordo com o arquivo .rb .css .js
   |Ctrl n| abre lista de possibilidades de acordo com o que ja escreveu anterior (palavras)
   |Ctrl l| abre lista de possibilidades de acordo com o que ja escreveu anterior (linha inteira)
 ctrlp
-	|Ctrl P| abre a opção de procurar um arquivo no diretório
+  |Ctrl P| abre a opção de procurar um arquivo no diretório
 nerdTree
-	|m| abre o menu
-	|gt| proxima tab
+  |m| abre o menu
+  |gt| proxima tab
 	|gT| tab anterior
 
 help
