@@ -58,6 +58,7 @@
   |{| volta parágrafo
   |}| pula parágrafo
   |~| swap case (only if 'tildeop' is set)
+  |v i m| seleciona todo o metodo
 comandos externos
   |:!comando| executa comando externo
   |:r arquivo| recupera ARQUIVO do disco e o insere dentro do arquivo atual
